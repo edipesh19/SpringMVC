@@ -10,14 +10,19 @@
 	<mvc:resources location="pdfs" mapping="/pdfs/**" />
 	<context:component-scan base-package="org.learn.springmvc.controller" />
 
+	<!-- Intercepter is used for localization p:paramName is the parameter which will come as input in url -->
 	<mvc:interceptors>
 		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"
 			p:paramName="language" />
 	</mvc:interceptors>
 
+	<!-- Local resolver -->
 	<bean id="localeResolver"
 		class="org.springframework.web.servlet.i18n.SessionLocaleResolver"
 		p:defaultLocale="en" />
+
+	<!-- This is for defining the resource file for string which will be populated in jsp at runtime -->
+	<!-- p:basename should match the name of properties file here messages.properties -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ResourceBundleMessageSource"
 		p:basename="messages" />

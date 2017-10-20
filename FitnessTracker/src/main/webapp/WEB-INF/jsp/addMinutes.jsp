@@ -22,5 +22,6 @@
 			</td>
 		</tr>
 	</form:form>
+	<h1>Our goal for the day: ${goal.minutes}</h1>
 </body>
 </html>

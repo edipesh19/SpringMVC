@@ -8,9 +8,12 @@
 <title>Fitness Tracker</title>
 </head>
 <body>
+	<!-- example of spring form tag  -->
+	<!-- form take a command name here it is goal -->
 	<form:form commandName="goal">
 		<tr>
 			<td>Enter Minutes:</td>
+			<!-- minutes is an attribute present in the goal object -->
 			<td><form:input path="minutes" /></td>
 		</tr>
 		<tr>
