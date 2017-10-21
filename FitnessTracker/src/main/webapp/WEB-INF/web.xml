@@ -13,6 +13,7 @@
     <url-pattern>*.html</url-pattern>
   </servlet-mapping>
   
+  <!-- host all ststic resource like pdfs -->
    <servlet-mapping>
     <servlet-name>fitnesTrackerServlet</servlet-name>
     <url-pattern>/pdfs/**</url-pattern>

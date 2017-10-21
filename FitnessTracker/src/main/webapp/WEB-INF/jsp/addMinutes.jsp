@@ -18,7 +18,8 @@
 			<td><form:input path="minutes" /></td>
 		</tr>
 		<tr>
-			<td colspan="2"><input type="submit" value="Enter Exercise">
+			<td colspan="2">
+			<input type="submit" value="Enter Exercise">
 			</td>
 		</tr>
 	</form:form>
